@@ -1,0 +1,146 @@
+object Form2: TForm2
+  Left = 497
+  Top = 281
+  ClientHeight = 367
+  ClientWidth = 648
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  DesignSize = (
+    648
+    367)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 16
+    Top = 176
+    Width = 207
+    Height = 13
+    Caption = 'ABSDEFGHIGKLMNOPRSTUVWXYZ'
+    Font.Charset = SYMBOL_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Symbol'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 200
+    Width = 156
+    Height = 13
+    Caption = 'abcdefghijklmnopqrstuvwxyz'
+    Font.Charset = SYMBOL_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Symbol'
+    Font.Style = []
+    ParentFont = False
+    Visible = False
+  end
+  object strngrd: TStringGrid
+    Left = 8
+    Top = 8
+    Width = 265
+    Height = 81
+    ColCount = 4
+    RowCount = 3
+    FixedRows = 0
+    Font.Charset = SYMBOL_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Symbol'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 332
+    Width = 129
+    Height = 25
+    Anchors = [akLeft, akBottom]
+    Caption = #1055#1086#1089#1090#1088#1086#1080#1090#1100' '#1075#1088#1072#1092#1080#1082
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object cht1: TChart
+    Left = 280
+    Top = 8
+    Width = 357
+    Height = 349
+    AllowPanning = pmNone
+    BackWall.Brush.Style = bsClear
+    Legend.Alignment = laTop
+    Legend.LegendStyle = lsSeries
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'TChart')
+    Title.Visible = False
+    BottomAxis.AxisValuesFormat = '#,##0.##'
+    BottomAxis.LabelsFormat.TextAlignment = taCenter
+    BottomAxis.LabelStyle = talValue
+    BottomAxis.MinorGrid.Color = clGray
+    BottomAxis.MinorGrid.Style = psDashDotDot
+    BottomAxis.MinorGrid.SmallDots = True
+    BottomAxis.MinorGrid.Visible = True
+    BottomAxis.MinorTickCount = 5
+    BottomAxis.MinorTickLength = 1
+    BottomAxis.MinorTicks.Style = psDash
+    BottomAxis.StartPosition = 2.000000000000000000
+    BottomAxis.EndPosition = 98.000000000000000000
+    BottomAxis.RoundFirstLabel = False
+    BottomAxis.Title.Caption = 'U/d'
+    BottomAxis.Title.Font.Charset = SYMBOL_CHARSET
+    BottomAxis.Title.Font.Height = -13
+    BottomAxis.Title.Font.Name = 'Symbol'
+    DepthAxis.LabelsFormat.TextAlignment = taCenter
+    DepthTopAxis.LabelsFormat.TextAlignment = taCenter
+    LeftAxis.AxisValuesFormat = '#,##0.##'
+    LeftAxis.LabelsFormat.TextAlignment = taCenter
+    LeftAxis.LabelStyle = talValue
+    LeftAxis.MinorGrid.Style = psDash
+    LeftAxis.MinorTickCount = 5
+    LeftAxis.MinorTickLength = 4
+    LeftAxis.StartPosition = 2.000000000000000000
+    LeftAxis.EndPosition = 98.000000000000000000
+    LeftAxis.RoundFirstLabel = False
+    LeftAxis.TickLength = 5
+    LeftAxis.Title.Caption = #1050#1086#1087#1090
+    Pages.ScaleLastPage = False
+    RightAxis.LabelsFormat.TextAlignment = taCenter
+    TopAxis.LabelsFormat.TextAlignment = taCenter
+    View3D = False
+    Zoom.Allow = False
+    Zoom.Pen.Mode = pmNotXor
+    TabOrder = 2
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    DefaultCanvas = 'TGDIPlusCanvas'
+    ColorPaletteIndex = 13
+    object lnsrskoptotY: TLineSeries
+      Marks.Visible = False
+      SeriesColor = clRed
+      Brush.BackColor = clDefault
+      DrawStyle = dsCurve
+      LinePen.Width = 2
+      Pointer.Brush.Gradient.EndColor = clRed
+      Pointer.Gradient.EndColor = clRed
+      Pointer.HorizSize = 3
+      Pointer.InflateMargins = True
+      Pointer.Style = psDiamond
+      Pointer.VertSize = 3
+      Pointer.Visible = True
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end
